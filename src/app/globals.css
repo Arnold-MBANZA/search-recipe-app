@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Titles */
+h1, h2 {
+  color: #333;
+}
+
+.title, .main-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle, .secondary-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #666;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons */
+.button-link {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #45a049;
+}
+
+/* Containers */
+.main-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.recipe-card:hover .recipe-card_image {
+  opacity: 0.9;
+}
+
+.recipe-card-content {
+  padding: 16px;
+}
+
+.recipe-card_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.recipe-card_details {
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Difficulty Tag */
+.recipe-card_difficulty {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d9534f;
+  background: #fce8e6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Tags */
+.recipe-card_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.recipe-card_tag {
+  background-color: #e3f2fd;
+  color: #007bff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.recipe-card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.recipe-card_rating {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.recipe-card_cuisine {
+  font-style: italic;
+  color: #555;
+}
+
+/* Error Page Styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.errorContent {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.errorMessage {
+  font-size: 1.5rem;
+  color: #f44336;
+  font-weight: bold;
+}
+
+.errorText {
+  font-size: 1rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+.retryButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.retryButton:hover {
+  background-color: #45a049;
+}
+
+/* Test Page */
+.test-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.test-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Return button styles */
+.return-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #45a049;
+}
