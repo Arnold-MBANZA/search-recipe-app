@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 type Props = {
     error: Error;
     reset: () => void;
@@ -16,9 +18,9 @@ export default function Error({ error, reset }: Props) {
           <button onClick={reset} className="retryButton">
             🔄 Réessayer
           </button>
-          <a href="/" className="return-button">
-            🏠 Retour à l'accueil
-          </a>
+          <Link href="/" className="return-button">
+            🏠 Retour à l&apos;accueil
+          </Link>
         </div>
       </div>
     </div>
